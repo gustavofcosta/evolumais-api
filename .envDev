@@ -1,0 +1,5 @@
+DATABASE_URL="postgresql://evolumais:123456@localhost:5432/mydb?schema=public"
+
+DATABASE_USER = evolumais
+DATABASE_PASSWORD = 123456
+DATA_NAME = evolumais_db

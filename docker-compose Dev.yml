@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  evolumais_db:
+    container_name: evolumais_db
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_NAME: ${DATA_NAME}
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
